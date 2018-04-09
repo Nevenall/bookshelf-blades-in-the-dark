@@ -10,7 +10,7 @@
          </md-app-toolbar>
          <md-app-drawer :md-active.sync="showNavigation">
             <md-toolbar class="md-primary" md-elevation="0">
-               <img src="./assets/logo.png" alt="BookShelf">
+               <img src="./assets/logo.svg" alt="Blades in the Dark">
             </md-toolbar>
             <md-list>
                <md-list-item @click="pushNav('./')">
@@ -73,8 +73,9 @@ export default {
 @import "~vue-material/dist/theme/engine";
 
 @include md-register-theme("default", (
-   primary: md-get-palette-color(blue, A200), 
-   accent: md-get-palette-color(red, A200) 
+   primary:rgb(43, 44, 49), 
+   accent: rgb(231, 91, 6),
+   theme: dark 
 ));
 
 @import "~vue-material/dist/theme/all";
