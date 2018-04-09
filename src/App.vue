@@ -87,6 +87,9 @@ export default {
 
 <style>
 /* You can adjust these styles to work with your typefaces */
+
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&subset=latin-ext");
+
 #logo {
   padding-top: 1vw;
   padding-bottom: 1vw;
@@ -95,7 +98,7 @@ export default {
 #typography div {
   max-width: 35em;
   margin: auto;
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 1.2;
   letter-spacing: 0.1;
   word-spacing: 0;
@@ -107,9 +110,17 @@ export default {
   hyphenate-limit-lines: 2;
 }
 
-/* For styles specific to your book 
-#page div {
-
+/* For styles specific to your book  */
+#page p {
+  font-family: "Libre Baskerville", serif;
 }
- */
+
+#page h1,
+#page h2,
+#page h3,
+#page h4,
+#page h5,
+#page h6 {
+  text-align: left;
+}
 </style>
