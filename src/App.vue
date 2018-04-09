@@ -10,7 +10,7 @@
          </md-app-toolbar>
          <md-app-drawer :md-active.sync="showNavigation">
             <md-toolbar class="md-primary" md-elevation="0">
-               <img src="./assets/logo.svg" alt="Blades in the Dark">
+               <img id="logo" src="./assets/logo.svg" alt="Blades in the Dark">
             </md-toolbar>
             <md-list>
                <md-list-item @click="pushNav('./')">
@@ -86,13 +86,19 @@ export default {
 </style>
 
 <style>
-/* You can adjust these styles to work with your typefaces */ 
+/* You can adjust these styles to work with your typefaces */
+#logo {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
 
 #typography div {
   max-width: 35em;
   margin: auto;
   font-size: 1rem;
   line-height: 1.2;
+  letter-spacing: 0.1;
+  word-spacing: 0;
 }
 
 #typography p {
