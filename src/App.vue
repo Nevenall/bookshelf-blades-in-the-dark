@@ -88,7 +88,8 @@ export default {
 <style>
 /* You can adjust these styles to work with your typefaces */
 
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700");
+@import url("~/fonts/IBMPlexSerif-Text|IBMPlexSerif-TextItalic");
 
 #logo {
   padding-top: 1vw;
@@ -96,11 +97,12 @@ export default {
 }
 
 #typography div {
+  font-family: "IBMPlexSerif-Text", serif;
   max-width: 35em;
   margin: auto;
-  font-size: .9rem;
-  line-height: 1.2;
-  letter-spacing: 0.1;
+  font-size: 1.1rem;
+  line-height: 1.1;
+  letter-spacing: 0;
   word-spacing: 0;
 }
 
@@ -112,7 +114,6 @@ export default {
 
 /* For styles specific to your book  */
 #page p {
-  font-family: "Libre Baskerville", serif;
 }
 
 #page h1,
