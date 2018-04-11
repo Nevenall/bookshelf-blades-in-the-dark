@@ -86,9 +86,13 @@ export default {
 </style>
 
 <style>
-/* You can adjust these styles to work with your typefaces */
-
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700");
+@font-face {
+  font-family: "kirsty_regular";
+  src: url("/fonts/kirsty_regular.woff2") format("woff2"),
+    url("fonts/kirsty_regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 @import url("~/fonts/IBMPlexSerif-Text|IBMPlexSerif-TextItalic");
 
 #logo {
@@ -97,7 +101,7 @@ export default {
 }
 
 #typography div {
-  font-family: "IBMPlexSerif-Text", serif;
+  font-family: "IBMPlexSerif-Text";
   max-width: 35em;
   margin: auto;
   font-size: 1.1rem;
@@ -109,7 +113,6 @@ export default {
 #typography p {
   text-align: justify;
   hyphens: auto;
-  hyphenate-limit-lines: 2;
 }
 
 /* For styles specific to your book  */
@@ -123,5 +126,6 @@ export default {
 #page h5,
 #page h6 {
   text-align: left;
+  font-family: "kirsty_regular";
 }
 </style>
