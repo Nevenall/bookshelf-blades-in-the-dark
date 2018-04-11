@@ -89,7 +89,7 @@ export default {
 @font-face {
   font-family: "kirsty_regular";
   src: url("/fonts/kirsty_regular.woff2") format("woff2"),
-    url("fonts/kirsty_regular.woff") format("woff");
+    url("/fonts/kirsty_regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
