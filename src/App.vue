@@ -111,8 +111,12 @@ export default {
 }
 
 #typography p {
-  text-align: justify;
+  text-align: left;
   hyphens: auto;
+}
+
+#typography em {
+   font-family: "IBMPlexSerif-TextItalic";
 }
 
 /* For styles specific to your book  */
