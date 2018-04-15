@@ -122,8 +122,9 @@ export default {
 }
 
 /* For styles specific to your book  */
-#page p {
-}
+
+/* #page p {
+} */
 
 #page h1,
 #page h2,
