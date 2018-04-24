@@ -103,8 +103,8 @@ export default {
   font-family: "IBM Plex Serif", sans-serif;
   max-width: 35em;
   margin: auto;
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 1.125rem;
+  line-height: 1.125;
   letter-spacing: 0;
   word-spacing: 0;
 }
