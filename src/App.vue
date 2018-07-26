@@ -1,15 +1,11 @@
 <template>
    <v-app dark>
       <v-navigation-drawer :clipped="clipped" v-model="drawer" disable-route-watcher disable-resize-watcher app>
+         <v-card flat hover height="150px" @click.native="pushNav('./')" v-bind:img="require('./assets/logo.svg')">
+         
+         </v-card>
+         
          <v-list>
-            <v-list-tile avatar @click.stop="pushNav('./')">
-               <v-list-tile-avatar>
-                  <img src=./assets/logo.png alt=BookShelf />
-               </v-list-tile-avatar>
-               <v-list-tile-content>
-                  <v-list-tile-title>{{book.title}}</v-list-tile-title>
-               </v-list-tile-content>
-            </v-list-tile>
             <v-list-group value="true" v-for="section in book.sections" :key="section.name">
                <v-list-tile slot="activator">
                   <v-list-tile-title v-text="section.name"></v-list-tile-title>
@@ -71,7 +67,9 @@ export default {
 <style lang="scss">
 @import "fonts/system-fonts.css";
 @import "fonts/book-fonts.css";
-html { overflow-y: auto; }
+html {
+  overflow-y: auto;
+}
 #page {
   @import "typography.scss";
   @import "book.scss";

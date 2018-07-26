@@ -66,32 +66,8 @@ var pageOrder = {
          "path": "./README.html"
       },
       {
-         "name": "Character Sheet",
-         "path": "./Character Sheet.html"
-      },
-      {
-         "name": "Making a Mage",
-         "path": "./System/Making a Mage.html"
-      },
-      {
-         "name": "Mundane Actions",
-         "path": "./System/Mundane Actions.html"
-      },
-      {
-         "name": "Working Magick",
-         "path": "./System/Working Magick.html"
-      },
-      {
-         "name": "Welcome to Reality",
-         "path": "./Setting/Welcome to Reality.html"
-      },
-      {
-         "name": "Avatars",
-         "path": "./Setting/Avatars.html"
-      },
-      {
-         "name": "Focus",
-         "path": "./Setting/Focus.html"
+         "name": "The Basics",
+         "path": "./The Basics/The Basics.html"
       }
    ]
 }

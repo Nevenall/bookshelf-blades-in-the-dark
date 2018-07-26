@@ -1,1 +1,14 @@
 /* define font faces for your book here and place the files in fonts/ */
+
+
+
+
+@font-face {
+   font-display: block;
+   font-family: 'Kirsty';
+   font-style: regular;
+   font-weight: 400;
+   src: url(Kirsty-Regular.woff2) format('woff2');
+}
+
+
