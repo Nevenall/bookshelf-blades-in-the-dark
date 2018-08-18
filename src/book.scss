@@ -1,9 +1,6 @@
 // A placeholder file for custom styles
 // these styles will be imported into the #page scope 
 
-
-
-
 // ** Vue Material Variables **
 // todo - we can make use of vue-material's theme css vars if we want 
 //    --md-theme-default-primary
@@ -21,5 +18,5 @@ h5,
 h6 {
    font-family: "Kirsty";
    font-weight: normal;
-   color: $secondary-color;
+   color: var(--md-theme-default-accent);
 }
