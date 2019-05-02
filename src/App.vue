@@ -9,11 +9,11 @@
             Blades in the Dark
          </span>
       </md-app-toolbar>
-      <md-app-drawer md-fixed md-persistent="full" :md-active.sync="drawer">
+      <md-app-drawer :md-active.sync="drawer">
          <div class="drawer-logo">
             <img src="./assets/logo.svg" alt="bookshelf logo">
          </div>
-          <md-list>
+         <md-list>
             <md-list-item md-expand v-for="section in book.sections" :key="section.name">
                <span class="md-list-item-text">{{section.name}}</span>
                <md-list slot="md-expand">
@@ -64,11 +64,11 @@ export default {
 @import "~vue-material/dist/theme/all";
 @import "fonts/system-fonts.css";
 @import "fonts/book-fonts.css";
-html {
-  overflow-y: hidden;
-}
 .md-app {
   height: 100vh;
+}
+.md-content {
+  overflow: auto;
 }
 .drawer-logo {
   padding: 10px;
